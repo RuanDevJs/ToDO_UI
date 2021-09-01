@@ -1,0 +1,12 @@
+@media only screen and (max-width: 767px) {
+  /* header */
+
+  .header-nav ul li {
+    margin: 5px auto !important;
+  }
+
+  .header-nav ul li a {
+    font-size: 20px !important;
+    padding: 12px !important;
+  }
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>ToDo List</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-container">
+      <nav class="header-nav">
+        <ul>
+          <li>
+            <a href="#" data-button>Diário</a>
+          </li>
+          <li>
+            <a href="#" data-button>Semanal</a>
+          </li>
+          <li>
+            <a href="#" data-button>Mensal</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="day" data-toDoForm>
+    <main class="intro">
+      <h1 data-day class="intro-title"></h1>
+      <p data-time class="intro-subtitle"></p>
+    </main>
+
+    <section class="form-list">
+      <div class="form-container">
+        <form data-form>
+          <input type="text" placeholder="Escreva sua meta">
+          <button>Enviar</button>
+        </form>
+
+        <ul data-list>
+          <li>
+            <a href="#" class="created">Bem vindo</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </section>
+
+  <section class="week" data-toDoForm>
+    <main class="intro">
+      <h1 class="intro-title">Essa semana</h1>
+      <p data-time class="intro-subtitle"></p>
+    </main>
+
+    <section class="form-list">
+      <div class="form-container">
+        <form data-form>
+          <input type="text" placeholder="Escreva sua meta">
+          <button>Enviar</button>
+        </form>
+
+        <ul data-list>
+          <li>
+            <a href="#" class="created">Bem vindo</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </section>
+
+  <section class="Next Mounth" data-toDoForm>
+    <main class="intro">
+      <h1 class="intro-title">Mês que vem</h1>
+      <p data-time class="intro-subtitle"></p>
+    </main>
+
+    <section class="form-list">
+      <div class="form-container">
+        <form data-form>
+          <input type="text" placeholder="Escreva sua meta">
+          <button>Enviar</button>
+        </form>
+
+        <ul data-list>
+          <li>
+            <a href="#" class="created">Bem vindo</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </section>
+
+  <script src="./assets/scripts/index.js"></script>
+</body>
+
+</html>

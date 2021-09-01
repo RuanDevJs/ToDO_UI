@@ -1,0 +1,183 @@
+@import "./reset.css";
+@import "./responsive.css";
+@import "./animate.css";
+
+body {
+  background-color: #222222;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  background-color: #222222;
+  padding: 50px;
+  border-bottom: 2px solid #1f1f1f;
+  box-shadow: 4px 0px 6px rgba(0, 0, 0, 16%);
+}
+
+.header-container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-nav {
+  margin: 0 10px;
+}
+
+.header-nav ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.header-nav ul li {
+  margin: 0 30px;
+}
+
+.header-nav ul li a {
+  display: block;
+  padding: 0 22px;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  transition: 0.5s ease-out;
+}
+
+.header-nav ul li a:hover {
+  transition: 0.2s ease-in;
+  color: #c2c2c2;
+}
+
+.intro {
+  margin-top: 32px;
+}
+
+.intro-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 45px;
+  text-align: center;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.intro-title::after {
+  content: "";
+  display: block;
+  width: 110px;
+  height: 2px;
+  margin: 5px auto 5px auto;
+  background-color: #c2c2c2;
+}
+
+.intro-subtitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  text-align: center;
+  color: #f2f2f2;
+  margin-top: 10px;
+}
+
+.form-list {
+  margin-top: 32px;
+}
+
+.form-container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+[data-form] {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 45px;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+[data-form] > input {
+  width: 460px;
+  padding: 16px;
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid #393939;
+  background-color: #1f1f1f;
+  font-size: 16px;
+  font-weight: 300;
+  color: #c2c2c2;
+}
+
+[data-form] > button {
+  font-family: "Roboto", sans-serif;
+  width: 300px;
+  padding: 16px;
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid #393939;
+  background-color: #1f1f1f;
+  font-size: 32px;
+  font-weight: 200;
+  color: #c2c2c2;
+  cursor: pointer;
+  letter-spacing: 2px;
+  transition: 0.3s ease-out;
+}
+
+[data-form] > button:hover {
+  transition: 0.3s ease-in;
+  background-color: #222222;
+}
+
+[data-list] li a {
+  display: none;
+  margin: 10px auto;
+  padding: 16px;
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid #393939;
+  background-color: #1f1f1f;
+  font-size: 16px;
+  font-weight: 300;
+  color: #c2c2c2;
+  transition: 0.2s ease-out;
+  filter: blur(1px);
+}
+
+[data-list] li a:hover {
+  background-color: #222222;
+  transition: 0.2s ease-in;
+}
+
+[data-list] li a.created {
+  animation: AnimateLeft 0.5s forwards;
+  display: block;
+  filter: blur(0px);
+}
+
+[data-toDoForm] {
+  display: none;
+}
+
+[data-toDoForm].active {
+  display: block;
+  animation: AnimateLeft 0.5s forwards;
+}
+
+.activeButton {
+  color: #393939 !important;
+  transition: 0.2s ease-in;
+}
